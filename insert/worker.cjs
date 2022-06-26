@@ -35,6 +35,7 @@ module.exports.focusMenu = async () => {
     width: windowState.width,
     height: windowState.height,
     webPreferences: {
+      contextIsolation: true,
       nodeIntegration: true,
       enableRemoteModule: true,
       session: session.fromPartition('persist:notion'),
